@@ -1,0 +1,1454 @@
+        @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            font-family: Helvetica;
+            padding: 15px;
+            background-color: #121212;
+            color: #fff;
+            font-display: swap;
+        }
+        
+        .main {
+            width: 100%;
+            margin: 80px 0 10px 0;
+            padding: 60px 20px;
+            background: #202020;
+        }
+        
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            background-color: #121212;
+        }
+        
+        .navbar .logo h1 {
+            font-family: 'Gluten';
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #E03616, #FFE066);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .navbar .menu a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+        
+        .navbar .menu a:hover {
+            text-decoration: underline #fff;
+        }
+        
+        #introcontainer {
+            color: #999;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            float: left;
+            font-family: 'Roboto';
+        }
+        
+        #introcontainer h1 {
+            font-size: 4.5rem;
+        }
+        
+        #flip {
+            height: 50px;
+            overflow: hidden;
+        }
+        
+        #flip>div>div {
+            color: #fff;
+            padding: 4px 15px;
+            margin-bottom: 46.5px;
+            display: inline-block;
+            border: none;
+        }
+        
+        #flip div:first-child {
+            animation: show 6s linear infinite;
+        }
+        
+        #flip div div {
+            background: #E03616;
+        }
+        
+        #flip div:first-child div {
+            background: #e6bb10;
+        }
+        
+        #flip div:last-child div {
+            background: #DC143C;
+        }
+        
+        .gr_container {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1.5fr;
+            grid-template-columns: 1fr 1.5fr;
+            margin-bottom: 20px;
+            padding: 50px;
+        }
+        
+        .wave {
+            text-decoration: underline wavy #e6bb10;
+            -webkit-text-decoration: underline wavy #e6bb10;
+            -webkit-text-underline-position: under;
+            text-underline-position: under;
+        }
+        
+        .h_image svg {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            float: right;
+            margin-top: 80px;
+        }
+        
+        .text p {
+            margin-top: 100px;
+            font-size: 1.4rem;
+            line-height: 45px;
+        }
+        
+        .skills {
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .con {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 1.5fr;
+            grid-template-columns: 1fr 2fr;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        
+        .list,
+        .projects,
+        .skills,
+        footer {
+            color: #999;
+            font-size: 1.5rem;
+        }
+        
+        .list ol {
+            color: #fff;
+            font-size: 1.4rem;
+        }
+        
+        .bars {
+            margin-top: 4px;
+        }
+        
+        .f_bar {
+            width: 50%;
+            height: 15px;
+            background-color: #E03616;
+            float: right;
+            margin-right: 80px;
+            margin-bottom: 12px;
+        }
+        
+        .ibar {
+            width: 90%;
+            height: 15px;
+            background-color: #FFE066;
+            animation: nine 4s ease-in-out;
+            animation-delay: 0.6s;
+        }
+        
+        .sbar {
+            width: 80%;
+            height: 15px;
+            background-color: #FFE066;
+            animation: eight 4s ease-in-out;
+            animation-delay: 0.6s;
+        }
+        
+        .tbar {
+            width: 70%;
+            height: 15px;
+            background-color: #FFE066;
+            animation: seven 4s ease-in-out;
+            animation-delay: 0.6s;
+        }
+        
+        .bar {
+            margin-top: -25px;
+            color: #999;
+            float: right;
+            margin-right: -70px;
+            font-size: 1.5rem;
+        }
+        
+        .projects {
+            margin-bottom: 20px;
+            padding: 50px;
+        }
+        
+        .grid {
+            margin: 20px auto;
+            display: table;
+        }
+        
+        .f_pic {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .grid a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .blur:hover {
+            filter: blur(5px);
+            transition: all 300ms ease-in-out;
+        }
+        
+        .spotify {
+            background-image: url(icon.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            margin-bottom: 3px;
+        }
+        
+        .cisco {
+            background-image: url(cisco.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 80px;
+            height: 50px;
+            margin-bottom: 3px;
+        }
+        
+        .halloween {
+            background-image: url(ouija.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-left: 8px;
+            margin-bottom: 3px;
+        }
+        
+        .discord {
+            background-image: url(discord.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            margin-bottom: 3px;
+        }
+        
+        .good {
+            background-image: url(good.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            margin-bottom: 3px;
+        }
+        
+        .blog {
+            background-image: url(blog.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 3px;
+        }
+        
+        .mouse {
+            background-image: url(mouse.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            margin-bottom: 3px;
+        }
+        
+        .form {
+            background-image: url(form.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 3px;
+            margin-left: 13px;
+        }
+        
+        footer {
+            width: 100%;
+            margin-top: 20px;
+            padding: 50px;
+        }
+        
+        .twitter {
+            background-image: url(twitter.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .instagram {
+            background-image: url(instagram.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .github {
+            background-image: url(github.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .facebook {
+            background-image: url(facebook.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .facebook {
+            background-image: url(facebook.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .cdiscord {
+            background-image: url(cdiscord.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .gmail {
+            background-image: url(gmail.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 60px;
+        }
+        /* animations */
+        
+        @keyframes nine {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 90%;
+            }
+        }
+        
+        @keyframes eight {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 80%;
+            }
+        }
+        
+        @keyframes seven {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 70%;
+            }
+        }
+        
+        @keyframes show {
+            0% {
+                margin-top: -270px;
+            }
+            5% {
+                margin-top: -180px;
+            }
+            33% {
+                margin-top: -180px;
+            }
+            38% {
+                margin-top: -90px;
+            }
+            66% {
+                margin-top: -90px;
+            }
+            71% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+        }
+        
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        /* responsiveness */
+        
+        @media only screen and (max-width:320px) {
+            .main {
+                margin-top: 70px;
+                padding: 15px 10px;
+            }
+            .navbar {
+                justify-content: center;
+            }
+            .navbar .logo h1 {
+                font-size: 1.8rem;
+            }
+            .menu {
+                display: none;
+            }
+            #introcontainer {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            #introcontainer h1 {
+                font-size: 2.3rem;
+                margin-left: 0px;
+            }
+            #flip {
+                height: 40px;
+            }
+            .gr_container {
+                display: flex;
+                flex: 1;
+                padding: 10px 8px;
+                margin-bottom: 20px;
+            }
+            .h_image svg {
+                display: none;
+            }
+            .text p {
+                margin-top: 60px;
+                font-size: 1.1rem;
+                line-height: 28px;
+            }
+            .skills {
+                margin-bottom: 20px;
+                padding: 10px 8px;
+            }
+            .con {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .list,
+            .projects,
+            .skills,
+            footer {
+                font-size: 0.9rem;
+            }
+            .list ol {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+            .bars {
+                margin-top: 3px;
+            }
+            .f_bar {
+                height: 8px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+            .ibar {
+                height: 8px;
+            }
+            .sbar {
+                height: 8px;
+            }
+            .tbar {
+                height: 8px;
+            }
+            .bar {
+                margin-top: -13px;
+                margin-right: -40px;
+                font-size: 0.8rem;
+            }
+            .projects {
+                padding: 10px 8px;
+                margin-bottom: 10px;
+            }
+            .grid {
+                display: table;
+                margin: 10px auto;
+            }
+            .f_pic {
+                margin: 8px;
+            }
+            .grid a {
+                font-size: 0.7rem;
+            }
+            .spotify {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .cisco {
+                width: 50px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .halloween {
+                width: 40px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .discord {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .good {
+                width: 40px;
+                height: 40px;
+                margin-left: 13px;
+            }
+            .blog {
+                width: 40px;
+                height: 40px;
+                margin-left: 0px;
+            }
+            .mouse {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            .form {
+                width: 40px;
+                height: 40px;
+            }
+            footer {
+                margin-top: 10px;
+                padding: 10px 8px;
+            }
+            .twitter {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram {
+                width: 40px;
+                height: 40px;
+            }
+            .github {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .cdiscord {
+                width: 40px;
+                height: 40px;
+            }
+            .gmail {
+                width: 40px;
+                height: 40px;
+            }
+            #flip>div>div {
+                padding: 9px 15px;
+                margin-bottom: 62px;
+            }
+        }
+        
+        @media only screen and (max-width:375px) and (min-width:326px) {
+            .main {
+                margin-top: 70px;
+                padding: 15px 10px;
+            }
+            .navbar {
+                justify-content: center;
+            }
+            .navbar .logo h1 {
+                font-size: 1.8rem;
+            }
+            .menu {
+                display: none;
+            }
+            #introcontainer {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            #introcontainer h1 {
+                font-size: 2.3rem;
+                margin-left: 0px;
+            }
+            #flip {
+                height: 40px;
+            }
+            .gr_container {
+                display: flex;
+                flex: 1;
+                padding: 10px 8px;
+                margin-bottom: 20px;
+            }
+            .h_image svg {
+                display: none;
+            }
+            .text p {
+                margin-top: 60px;
+                font-size: 1.1rem;
+                line-height: 28px;
+            }
+            .skills {
+                margin-bottom: 20px;
+                padding: 10px 8px;
+            }
+            .con {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .list,
+            .projects,
+            .skills,
+            footer {
+                font-size: 0.9rem;
+            }
+            .list ol {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+            .bars {
+                margin-top: 3px;
+            }
+            .f_bar {
+                height: 8px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+            .ibar {
+                height: 8px;
+            }
+            .sbar {
+                height: 8px;
+            }
+            .tbar {
+                height: 8px;
+            }
+            .bar {
+                margin-top: -13px;
+                margin-right: -40px;
+                font-size: 0.8rem;
+            }
+            .projects {
+                padding: 10px 8px;
+                margin-bottom: 10px;
+            }
+            .grid {
+                display: table;
+                margin: 10px auto;
+            }
+            .f_pic {
+                margin: 16px;
+            }
+            .grid a {
+                font-size: 0.7rem;
+            }
+            .spotify {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .cisco {
+                width: 50px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .halloween {
+                width: 40px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .discord {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .good {
+                width: 40px;
+                height: 40px;
+                margin-left: 13px;
+            }
+            .blog {
+                width: 40px;
+                height: 40px;
+                margin-left: 0px;
+            }
+            .mouse {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            .form {
+                width: 40px;
+                height: 40px;
+            }
+            footer {
+                margin-top: 10px;
+                padding: 10px 8px;
+            }
+            .twitter {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram {
+                width: 40px;
+                height: 40px;
+            }
+            .github {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .cdiscord {
+                width: 40px;
+                height: 40px;
+            }
+            .gmail {
+                width: 40px;
+                height: 40px;
+            }
+            #flip>div>div {
+                padding: 9px 15px;
+                margin-bottom: 62px;
+            }
+        }
+        
+        @media only screen and (min-width:376px) and (max-width:425px) {
+            .f_pic {
+                margin: 21px;
+            }
+            .main {
+                margin-top: 70px;
+                padding: 15px 10px;
+            }
+            .navbar {
+                justify-content: center;
+            }
+            .navbar .logo h1 {
+                font-size: 1.8rem;
+            }
+            .menu {
+                display: none;
+            }
+            #introcontainer {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            #introcontainer h1 {
+                font-size: 2.3rem;
+                margin-left: 0px;
+            }
+            #flip {
+                height: 40px;
+            }
+            .gr_container {
+                display: flex;
+                flex: 1;
+                padding: 10px 8px;
+                margin-bottom: 20px;
+            }
+            .h_image svg {
+                display: none;
+            }
+            .text p {
+                margin-top: 60px;
+                font-size: 1.1rem;
+                line-height: 28px;
+            }
+            .skills {
+                margin-bottom: 20px;
+                padding: 10px 8px;
+            }
+            .con {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .list,
+            .projects,
+            .skills,
+            footer {
+                font-size: 0.9rem;
+            }
+            .list ol {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+            .bars {
+                margin-top: 3px;
+            }
+            .f_bar {
+                height: 8px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+            .ibar {
+                height: 8px;
+            }
+            .sbar {
+                height: 8px;
+            }
+            .tbar {
+                height: 8px;
+            }
+            .bar {
+                margin-top: -13px;
+                margin-right: -40px;
+                font-size: 0.8rem;
+            }
+            .projects {
+                padding: 10px 8px;
+                margin-bottom: 10px;
+            }
+            .grid {
+                display: table;
+                margin: 10px auto;
+            }
+            .grid a {
+                font-size: 0.7rem;
+            }
+            .spotify {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .cisco {
+                width: 50px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .halloween {
+                width: 40px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .discord {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .good {
+                width: 40px;
+                height: 40px;
+                margin-left: 13px;
+            }
+            .blog {
+                width: 40px;
+                height: 40px;
+                margin-left: 0px;
+            }
+            .mouse {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            .form {
+                width: 40px;
+                height: 40px;
+            }
+            footer {
+                margin-top: 10px;
+                padding: 10px 8px;
+            }
+            .twitter {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram {
+                width: 40px;
+                height: 40px;
+            }
+            .github {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .cdiscord {
+                width: 40px;
+                height: 40px;
+            }
+            .gmail {
+                width: 40px;
+                height: 40px;
+            }
+            #flip>div>div {
+                padding: 9px 15px;
+                margin-bottom: 62px;
+            }
+        }
+        
+        @media only screen and (min-width:426px) and (max-width:475px) {
+            .f_pic {
+                margin: 12px;
+            }
+            .main {
+                margin-top: 70px;
+                padding: 15px 10px;
+            }
+            .navbar {
+                justify-content: center;
+            }
+            .navbar .logo h1 {
+                font-size: 1.8rem;
+            }
+            .menu {
+                display: none;
+            }
+            #introcontainer {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            #introcontainer h1 {
+                font-size: 2.3rem;
+                margin-left: 0px;
+            }
+            #flip {
+                height: 40px;
+            }
+            .gr_container {
+                display: flex;
+                flex: 1;
+                padding: 10px 8px;
+                margin-bottom: 20px;
+            }
+            .h_image svg {
+                display: none;
+            }
+            .text p {
+                margin-top: 60px;
+                font-size: 1.1rem;
+                line-height: 28px;
+            }
+            .skills {
+                margin-bottom: 20px;
+                padding: 10px 8px;
+            }
+            .con {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .list,
+            .projects,
+            .skills,
+            footer {
+                font-size: 0.9rem;
+            }
+            .list ol {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+            .bars {
+                margin-top: 3px;
+            }
+            .f_bar {
+                height: 8px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+            .ibar {
+                height: 8px;
+            }
+            .sbar {
+                height: 8px;
+            }
+            .tbar {
+                height: 8px;
+            }
+            .bar {
+                margin-top: -13px;
+                margin-right: -40px;
+                font-size: 0.8rem;
+            }
+            .projects {
+                padding: 10px 8px;
+                margin-bottom: 10px;
+            }
+            .grid {
+                display: table;
+                margin: 10px auto;
+            }
+            .grid a {
+                font-size: 0.7rem;
+            }
+            .spotify {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .cisco {
+                width: 50px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .halloween {
+                width: 40px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .discord {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .good {
+                width: 40px;
+                height: 40px;
+                margin-left: 13px;
+            }
+            .blog {
+                width: 40px;
+                height: 40px;
+                margin-left: 0px;
+            }
+            .mouse {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            .form {
+                width: 40px;
+                height: 40px;
+            }
+            footer {
+                margin-top: 10px;
+                padding: 10px 8px;
+            }
+            .twitter {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram {
+                width: 40px;
+                height: 40px;
+            }
+            .github {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .cdiscord {
+                width: 40px;
+                height: 40px;
+            }
+            .gmail {
+                width: 40px;
+                height: 40px;
+            }
+            #flip>div>div {
+                padding: 9px 15px;
+                margin-bottom: 62px;
+            }
+        }
+        
+        @media only screen and (min-width:476px) and (max-width:550px) {
+            .f_pic {
+                margin: 40px;
+            }
+            .main {
+                margin-top: 70px;
+                padding: 15px 10px;
+            }
+            .navbar {
+                justify-content: center;
+            }
+            .navbar .logo h1 {
+                font-size: 1.8rem;
+            }
+            .menu {
+                display: none;
+            }
+            #introcontainer {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            #introcontainer h1 {
+                font-size: 2.3rem;
+                margin-left: 0px;
+            }
+            #flip {
+                height: 40px;
+            }
+            .gr_container {
+                display: flex;
+                flex: 1;
+                padding: 10px 8px;
+                margin-bottom: 20px;
+            }
+            .h_image svg {
+                display: none;
+            }
+            .text p {
+                margin-top: 60px;
+                font-size: 1.1rem;
+                line-height: 28px;
+            }
+            .skills {
+                margin-bottom: 20px;
+                padding: 10px 8px;
+            }
+            .con {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .list,
+            .projects,
+            .skills,
+            footer {
+                font-size: 0.9rem;
+            }
+            .list ol {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+            .bars {
+                margin-top: 3px;
+            }
+            .f_bar {
+                height: 8px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+            .ibar {
+                height: 8px;
+            }
+            .sbar {
+                height: 8px;
+            }
+            .tbar {
+                height: 8px;
+            }
+            .bar {
+                margin-top: -13px;
+                margin-right: -40px;
+                font-size: 0.8rem;
+            }
+            .projects {
+                padding: 10px 8px;
+                margin-bottom: 10px;
+            }
+            .grid {
+                display: table;
+                margin: 10px auto;
+            }
+            .grid a {
+                font-size: 0.7rem;
+            }
+            .spotify {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .cisco {
+                width: 50px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .halloween {
+                width: 40px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .discord {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .good {
+                width: 40px;
+                height: 40px;
+                margin-left: 13px;
+            }
+            .blog {
+                width: 40px;
+                height: 40px;
+                margin-left: 0px;
+            }
+            .mouse {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            .form {
+                width: 40px;
+                height: 40px;
+            }
+            footer {
+                margin-top: 10px;
+                padding: 10px 8px;
+            }
+            .twitter {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram {
+                width: 40px;
+                height: 40px;
+            }
+            .github {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .cdiscord {
+                width: 40px;
+                height: 40px;
+            }
+            .gmail {
+                width: 40px;
+                height: 40px;
+            }
+            #flip>div>div {
+                padding: 9px 15px;
+                margin-bottom: 62px;
+            }
+        }
+        
+        @media only screen and (min-width:551px) and (max-width:900px) {
+            .f_pic {
+                margin: 10px;
+            }
+            .main {
+                margin-top: 70px;
+                padding: 15px 10px;
+            }
+            .navbar {
+                justify-content: center;
+            }
+            .navbar .logo h1 {
+                font-size: 1.8rem;
+            }
+            .menu {
+                display: none;
+            }
+            #introcontainer {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            #introcontainer h1 {
+                font-size: 2.3rem;
+                margin-left: 0px;
+            }
+            #flip {
+                height: 40px;
+            }
+            .gr_container {
+                display: flex;
+                flex: 1;
+                padding: 10px 8px;
+                margin-bottom: 20px;
+            }
+            .h_image svg {
+                display: none;
+            }
+            .text p {
+                margin-top: 60px;
+                font-size: 1.1rem;
+                line-height: 28px;
+            }
+            .skills {
+                margin-bottom: 20px;
+                padding: 10px 8px;
+            }
+            .con {
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .list,
+            .projects,
+            .skills,
+            footer {
+                font-size: 0.9rem;
+            }
+            .list ol {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+            .bars {
+                margin-top: 3px;
+            }
+            .f_bar {
+                height: 8px;
+                margin-right: 35px;
+                margin-bottom: 11px;
+            }
+            .ibar {
+                height: 8px;
+            }
+            .sbar {
+                height: 8px;
+            }
+            .tbar {
+                height: 8px;
+            }
+            .bar {
+                margin-top: -13px;
+                margin-right: -40px;
+                font-size: 0.8rem;
+            }
+            .projects {
+                padding: 10px 8px;
+                margin-bottom: 10px;
+            }
+            .grid {
+                display: table;
+                margin: 10px auto;
+            }
+            .grid a {
+                font-size: 0.7rem;
+            }
+            .spotify {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .cisco {
+                width: 50px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .halloween {
+                width: 40px;
+                height: 40px;
+                margin-left: 6px;
+            }
+            .discord {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+            }
+            .good {
+                width: 40px;
+                height: 40px;
+                margin-left: 13px;
+            }
+            .blog {
+                width: 40px;
+                height: 40px;
+                margin-left: 0px;
+            }
+            .mouse {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            .form {
+                width: 40px;
+                height: 40px;
+            }
+            footer {
+                margin-top: 10px;
+                padding: 10px 8px;
+            }
+            .twitter {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram {
+                width: 40px;
+                height: 40px;
+            }
+            .github {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .facebook {
+                width: 40px;
+                height: 40px;
+            }
+            .cdiscord {
+                width: 40px;
+                height: 40px;
+            }
+            .gmail {
+                width: 40px;
+                height: 40px;
+            }
+            #flip>div>div {
+                padding: 9px 15px;
+                margin-bottom: 62px;
+            }
+        }
